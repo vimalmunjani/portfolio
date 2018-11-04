@@ -10,6 +10,8 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { SkillComponent } from './skill/skill.component';
 import { WorkComponent } from './work/work.component';
+import { RoutingModule } from './routing.module';
+
 
 
 @NgModule({
@@ -24,6 +26,7 @@ import { WorkComponent } from './work/work.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    RoutingModule,
     MDBBootstrapModule.forRoot()
   ],
   schemas: [ NO_ERRORS_SCHEMA ],

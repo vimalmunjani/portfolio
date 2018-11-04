@@ -1,12 +1,13 @@
-<!-- Start your project here-->
-<div style="height: 100vh">
-  <div class="flex-center flex-column">
-    <h1 class="animated fadeIn mb-4">Material Design for Bootstrap (Angular)</h1>
+<div class="app-container">
 
-    <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
-    <h6 class="animated fadeIn mb-3">Start browsing <a href="https://mdbootstrap.com/angular">documentation</a>.</h6>
-
-    <p class="animated fadeIn text-muted">MDB Team</p>
+  <div class="navbar">
+    <a routerLink="/home" >Home</a>
+    <a routerLink="/skills" >Skills</a>
+    <a routerLink="/work">Work</a>
   </div>
+
+  <div class="component-container" [@routerTransition]="getState(o)">
+    <router-outlet #o = "outlet"></router-outlet>
+  </div>
+
 </div>
-<!-- /Start your project here-->
