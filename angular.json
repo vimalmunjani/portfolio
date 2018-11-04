@@ -26,19 +26,33 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.scss"
+            "styles": [{
+                "input": "node_modules/font-awesome/scss/font-awesome.scss"
+              },
+              {
+                "input": "node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss"
+              },
+              {
+                "input": "node_modules/angular-bootstrap-md/scss/mdb-free.scss"
+              },
+              {
+                "input": "src/styles.scss"
+              }
             ],
-            "scripts": []
+            "scripts": [{
+                "input": "node_modules/chart.js/dist/Chart.js"
+              },
+              {
+                "input": "node_modules/hammerjs/hammer.min.js"
+              }
+            ]
           },
           "configurations": {
             "production": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
+              "fileReplacements": [{
+                "replace": "src/environments/environment.ts",
+                "with": "src/environments/environment.prod.ts"
+              }],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
